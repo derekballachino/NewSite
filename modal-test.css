@@ -1,0 +1,37 @@
+/* CSS Document */
+html {
+  	box-sizing: border-box;
+}
+--*, *:before, *:after {
+  --box-sizing: --inherit;
+--}
+
+.wrapper {
+  	display: flex;  
+  	flex-flow: row wrap;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.wrapper > * {
+  	padding: 10px;
+  	flex: 1 100%;
+}
+
+.mod {
+  	padding: 10px;
+  	border-radius: 5px;
+  	border: 1px solid #ccc;
+  	margin: 10px;
+  	box-shadow: 1px 1px 2px #444;
+}
+
+.module {
+  	box-sizing: content-box;
+}
+
+/* single colon for IE 8 */
+.module:after {
+  	width:90%;
+	height:90%;
+}
